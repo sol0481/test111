@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 
 fig, ax = plt. subplots()
 
-c1 = st.sidebar.radio('선의 색을 선택하시오', ['red', 'green', 'blue', 'black'])
-s1 = st.sidebar.radio('선의 스타일을 선택하시오', ['-', ':', '-.', '--'])
-m1 = st.sidebar.radio('점의 모양을 선택하시오',['o', 'h', 's', 'p', '^'])
+c1 = st.sidebar.radio('선의 색을 선택하시오', ['red', 'green', 'blue', 'purple', 'orange'])
+s1 = st.sidebar.radio('선의 스타일을 선택하시오', ['-', '--', ':', '-.'])
+m1 = st.sidebar.radio('점의 모양을 선택하시오',['o', '^', 's', 'p'])
 
 love = []
 y = []
