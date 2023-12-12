@@ -14,13 +14,16 @@ d = st.number_input('d의 값을 입력하시오', value=2000.0, step=100.0)
 
 x = []
 y1 = []
-y2 = []
 for i in range(-29, 30, 3):
     x.append(i)
     y1.append(a*i*i + b*i + c)
-    y2.append(d/i)
 
-plt.plot(x, y1, color = c1, linestyle = s1, marker = m1)
+x = []
+y2 = []
+for i in range(-29, 30, 3):
+    x.append(i)
+    y2.append(d/i)
+plt.plot(x, y1, y2, color = c1, linestyle = s1, marker = m1)
 st.pyplot(fig)
 
 # a = st.number_input('a의 값을 입력하시오', value=2.0, step=1.0)
@@ -36,7 +39,7 @@ st.pyplot(fig)
 
 # plt.plot(x,y,color = 'red', linestyle = '--', marker = 'p')
 
-
+ 
 
 
 
